@@ -9,9 +9,5 @@ options:
 - version: 8
 labels:
 - mysql
-integrations:
-- name: db
-  title: Managed DB service
-  type: db
-  required: true
-  option: mysql
+database:
+  type: mysql
