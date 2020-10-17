@@ -11,7 +11,7 @@ env:
 - name: DB_USER
   value: '{{wodby_stack_name}}'   
 - name: DB_PASSWORD
-  value: '{{database.password}}'
+  value: '{{password}}'
   secret: true
 - name: DB_NAME
   value: '{{wodby_app_name}}'
@@ -21,3 +21,14 @@ labels:
 - mysql
 database:
   type: mysql
+  db:
+    name: '{{wodby_app_name}}'
+    charset: 'utf8mb4'
+    collation: 'utf8_general_ci'    
+  user:
+    name: '{{wodby_stack_name}}'
+    password: '{{password}}'
+tokens:
+- name: password
+  generate:
+    regex: '[0-9a-z-]{32}'
