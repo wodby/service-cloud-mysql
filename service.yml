@@ -7,6 +7,16 @@ options:
 - version: 5.6
 - version: 5.7
 - version: 8
+env:
+- name: DB_USER
+  value: '{{wodby_stack_name}}'   
+- name: DB_PASSWORD
+  value: '{{database.password}}'
+  secret: true
+- name: DB_NAME
+  value: '{{wodby_app_name}}'
+- name: DB_DRIVER
+  value: mysql
 labels:
 - mysql
 database:
