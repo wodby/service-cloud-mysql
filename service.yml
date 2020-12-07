@@ -7,16 +7,6 @@ options:
 - version: 5.6
 - version: 5.7
 - version: 8
-env:
-- name: DB_USER
-  value: '{{database.user.name}}'
-- name: DB_PASSWORD
-  value: '{{database.user.password}}'
-  secret: true
-- name: DB_NAME
-  value: '{{database.db.name}}'
-- name: DB_DRIVER
-  value: mysql
 labels:
 - mysql
 database:
