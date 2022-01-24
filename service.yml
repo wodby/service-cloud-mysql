@@ -4,10 +4,10 @@ type: db
 title: Cloud MySQL
 external: true
 options:
-- version: 5.5
-- version: 5.6
-- version: 5.7
-- version: 8
+- version: '5.5'
+- version: '5.6'
+- version: '5.7'
+- version: '8'
 labels:
 - mysql
 database:
