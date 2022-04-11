@@ -12,6 +12,7 @@ labels:
 - mysql
 database:
   type: mysql
+  kind: mysql
   db:
     name: '{{app.name}}_{{instance.name}}'
     charset: 'utf8mb4'
