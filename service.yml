@@ -1,4 +1,4 @@
-name: mysql-cloud
+name: cloud-mysql
 icon: mysql
 type: db
 title: Cloud MySQL
