@@ -1,1 +1,1 @@
-# service-cloud-mysql
+# Cloud MySQL (external) service for Wodby 2.0
