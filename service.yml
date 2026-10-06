@@ -2,6 +2,7 @@ name: cloud-mysql
 icon: mysql
 type: db
 title: Cloud MySQL
+guidance: GUIDANCE.md
 external: true
 options:
 - version: '5.5'
